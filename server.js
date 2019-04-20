@@ -12,9 +12,13 @@ var request = require('request'); // "Request" library
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
-var client_id = 'ed2d4bbb071e479486b956e0749346f8'; // Your client id
-var client_secret = '1261a30a6827432e8ddba467b29d17ef'; // Your secret
-var redirect_uri = 'https://djfy-backend-server.herokuapp.com/callback'; // Your redirect uri
+var client_id = 'ed2d4bbb071e479486b956e0749346f8';
+var client_secret = '1261a30a6827432e8ddba467b29d17ef';
+var redirect_uri = 'https://djfy-backend-server.herokuapp.com/callback';
+// 'http://localhost:8888/callback' when running locally
+
+var server_port = 'https://djfy-backend-server.herokuapp.com';
+// 8888 when running locally
 
 /**
  * Generates a random string containing numbers and letters
@@ -141,6 +145,6 @@ app.get('/refresh_token', function(req, res) {
   });
 });
 
-var port = redirect_uri;
+var port = server_port;
 console.log("Listening on port " + port);
 app.listen(port);

@@ -1,7 +1,8 @@
 # Spotify Accounts Authentication Examples
 
 Server code follows OAuth 2.0 flows for [authenticating against the Spotify Web API](https://developer.spotify.com/web-api/authorization-guide/).
-    * Uses refreshable user authorization (Authorization Code flow)
+
+*Uses refreshable user authorization (Authorization Code flow)
 
 
 ## Install Node.js and npm

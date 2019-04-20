@@ -141,6 +141,6 @@ app.get('/refresh_token', function(req, res) {
   });
 });
 
-var port = 8888;
+var port = redirect_uri;
 console.log("Listening on port " + port);
 app.listen(port);

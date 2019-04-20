@@ -15,4 +15,8 @@ Once installed, clone the repository and install its dependencies running:
 
 
 ## To run on local server
+    Change redirect_uri to 'http://localhost:8888/callback'
+    
+    Then:
+    
     $ npm start

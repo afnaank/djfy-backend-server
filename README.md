@@ -16,6 +16,3 @@ Once installed, clone the repository and install its dependencies running:
 
 ## To run on local server
     $ npm start
-
-
-Then, open `http://localhost:8888` in a browser.

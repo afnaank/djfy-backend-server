@@ -1,11 +1,6 @@
-/**
- * This is an example of a basic node.js script that performs
- * the Authorization Code oAuth2 flow to authenticate against
- * the Spotify Accounts.
- *
- * For more information, read
- * https://developer.spotify.com/web-api/authorization-guide/#authorization_code_flow
- */
+// When running locally:
+// change redirect_uri to 'http://localhost:8888/callback'
+// change res.redirect 'https://djfy.herokuapp.com/#' to 'http://localhost:8888/#'
 
 var express = require('express'); // Express web server framework
 var request = require('request'); // "Request" library
@@ -15,10 +10,8 @@ var cookieParser = require('cookie-parser');
 var client_id = 'ed2d4bbb071e479486b956e0749346f8';
 var client_secret = '1261a30a6827432e8ddba467b29d17ef';
 var redirect_uri = 'https://djfy-backend-server.herokuapp.com/callback';
-// 'http://localhost:8888/callback' when running locally
 
 var server_port = process.env.PORT || 8888;
-// 8888 when running locally
 
 /**
  * Generates a random string containing numbers and letters

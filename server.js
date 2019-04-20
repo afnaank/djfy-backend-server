@@ -17,7 +17,7 @@ var client_secret = '1261a30a6827432e8ddba467b29d17ef';
 var redirect_uri = 'https://djfy-backend-server.herokuapp.com/callback';
 // 'http://localhost:8888/callback' when running locally
 
-var server_port = 'https://djfy-backend-server.herokuapp.com';
+var server_port = process.env.PORT || 8888;
 // 8888 when running locally
 
 /**

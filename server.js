@@ -5,7 +5,7 @@
  *
  * When running locally,
  *  -change redirect_uri to 'http://localhost:8888/callback'
- *  -change res.redirect 'https://djfy.herokuapp.com/#' to 'http://localhost:8888/#'
+ *  -change res.redirect 'https://djfy.herokuapp.com/#' to 'http://localhost:3000/#'
  *  
  */
 

@@ -2,7 +2,9 @@
  * DJFY server code:
  *   Node.js script that performs the Authorization Code oAuth2 flow
  *   to authenticate against the Spotify Accounts.
- *
+ *  -https://developer.spotify.com/documentation/general/guides/authorization-guide/
+ *  -Based on code provided by: https://github.com/spotify/web-api-auth-examples
+ * 
  * When running locally,
  *  -change redirect_uri to 'http://localhost:8888/callback'
  *  -change res.redirect 'https://djfy.herokuapp.com/#' to 'http://localhost:3000/#'
@@ -19,6 +21,7 @@ var client_secret = '1261a30a6827432e8ddba467b29d17ef';
 var redirect_uri = 'https://djfy-backend-server.herokuapp.com/callback';
 
 var server_port = process.env.PORT || 8888;
+// Uses 8888 when running locally
 
 /**
  * Generates a random string containing numbers and letters
